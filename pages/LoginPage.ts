@@ -1,4 +1,4 @@
-import { LoginPageLocators } from "../locators/LoginPageLocators";
+import {LoginPageLocators } from "../locators/LoginPageLocators";
 import { Page } from "playwright";
 
 export class LoginPage
@@ -8,7 +8,7 @@ export class LoginPage
     }
 
     async myAccountDropMenu(){
-        await this.page.click(LoginPageLocators.myAccountTAb);
+        await this.page.click(LoginPageLocators.myAccountDropMenu);
     };
 
     async loginlink(){
