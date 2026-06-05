@@ -1,0 +1,6 @@
+To install playwright framework
+    npm install playwright@latest
+
+To run test only in cromium browser
+    npx playwright test tests/login.spec.ts --project="chromium" --headed
+
