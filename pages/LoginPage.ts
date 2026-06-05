@@ -1,4 +1,4 @@
-import { LoginLocators } from "../locators/LoginLocators";
+import { LoginPageLocators } from "../locators/LoginPageLocators";
 import { Page } from "playwright";
 
 export class LoginPage
@@ -7,18 +7,18 @@ export class LoginPage
     {
     }
 
-    async myaccounttab(){
-        await this.page.click(LoginLocators.myAccountTAb);
+    async myAccountDropMenu(){
+        await this.page.click(LoginPageLocators.myAccountTAb);
     };
 
     async loginlink(){
-        await this.page.click(LoginLocators.loginLink);
+        await this.page.click(LoginPageLocators.loginLink);
     };
 
     async login(username: string, password: string){
-        await this.page.fill(LoginLocators.userNameInput, username);
-        await this.page.fill(LoginLocators.passwordInput, password);
-        await this.page.click(LoginLocators.loginButton);
+        await this.page.fill(LoginPageLocators.userNameInput, username);
+        await this.page.fill(LoginPageLocators.passwordInput, password);
+        await this.page.click(LoginPageLocators.loginButton);
     };
         
     
