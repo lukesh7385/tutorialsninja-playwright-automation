@@ -5,9 +5,11 @@ export const RegisterPageLocators = {
      lastNameInput: "#input-lastname",
      emailInput: "#input-email",
      telephoneInput: "#input-telephone",
-     passwordInput: "##input-password",
+     passwordInput: "#input-password",
      confirmPasswordInput: "#input-confirm",
      subscribeYesRadioButton: "input[value='1'][name='newsletter']",
      privacyPolicyCheckBox: "input[value='1'][name='agree']",
-     continueButton: "input[value='Continue']"
+     continueButton: "text=Continue",
+     logoutLink: ".dropdown-menu > li:nth-child(5) a",
+     accountSuccessText: "div[id='content'] h1"
 };
