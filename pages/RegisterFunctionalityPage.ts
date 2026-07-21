@@ -3,6 +3,7 @@ import { Page } from "playwright";
 
 
 export class RegisterFunctionalityPage {
+    
     constructor(private page: Page) {
     };
 

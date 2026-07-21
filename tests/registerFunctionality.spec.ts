@@ -32,8 +32,7 @@ test.describe('Verifying Test 001 Register Functionality', () => {
         await registerPage.continue();
         await registerPage.myAccountDropMenu();
         await expect(page.locator(RegisterPageLocators.logoutLink)).toBeVisible();
-
-    })
+    });
 
 });
 
