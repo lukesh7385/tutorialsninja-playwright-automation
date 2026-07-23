@@ -12,7 +12,7 @@ export class LoginFunctionalityPage {
 
     async login(username: string, password: string) {
         await this.page.fill(LoginPageLocators.userNameInput, username);
-        await this.page.fill(LoginPageLocators.passwordInput, password);
+        await this.page.fill(LoginPageLocators.passwordInput,  String(password));
         await this.page.click(LoginPageLocators.loginButton);
     };
 
